@@ -1,12 +1,16 @@
 {
-  "name": "webpack.react-transform-hmr",
+  "name": "webpack-browsersync-react",
   "version": "1.0.0",
   "description": "Webpack + React Transform HMR",
-  "main": "app.js",
+  "main": "express.js",
   "author": "Sergey Slipchenko <faergeek@gmail.com>",
   "license": "MIT",
+  "watch": {
+    "start": "{express,webpack.confg,altconfig}.js"
+  },
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "watch": "npm-watch"
   },
   "dependencies": {
     "babel-core": "^6.21.0",
@@ -20,6 +24,10 @@
     "react-transform-hmr": "^1.0.0",
     "webpack": "^1.10.5",
     "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.13.2"
+    "webpack-hot-middleware": "^2.13.2",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.1.8"
   }
 }

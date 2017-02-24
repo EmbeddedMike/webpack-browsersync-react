@@ -26,7 +26,7 @@ export default class HelloWorld extends Component {
       {this.state.isToggleOn ? 'ON' : 'OFF'}
     </button>
       <h2 className="hello-world">
-        <span className="hello-world__i">Hello there , {name}</span>
+        <span className="hello-world__i">Hello there my own world , {name}</span>
       </h2>
       </div>
     );
